@@ -122,5 +122,3 @@ df.drop(['aspiration'],axis=1,inplace=True)
 # pr(df.head())
 
 df.to_csv('clean_df.csv')
-
-pr(df['peak-rpm'].dtype)

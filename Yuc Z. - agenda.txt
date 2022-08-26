@@ -1,0 +1,11 @@
+26/11;Bob Potters; 08:30
+31/11;René François; 12:30
+03/12;Chris Benz; 10:15
+03/12;Ben Franclin; 11:15
+04/12;Chris Hemsworth; 10:30
+05/12;Robert Danero; 12:15
+06/12;El Professor; 14:15
+03/12;Bella Ciao; 09:15
+
+dddd1-2;ddd;00�00
+11;11;11

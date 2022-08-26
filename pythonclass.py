@@ -117,25 +117,87 @@
 # solve this problem by using dictionary comprehension for both encryption and decryption
 # isalpha isnumeric
 
-from turtle import st
+# passwords={"Tim":"123o4n12oi","John":"12345qaz","Brad":"@#$$%AWES","Jessica":"1995"}
+
+# def rev(x):
+#     x = list(x[::-1])
+#     for i in range(len(x)-1):
+#         x.insert(2*i+1,'A')
+#     return "".join(x)
+
+# psw = {key:rev(value) for (key,value) in passwords.items()}
+# print(psw)
+
+# def p(x):
+#     x = list(x[::-1])
+#     for i in range((len(x)-1)//2):
+#         x.pop(-i-2)
+#     return "".join(x)
+
+# original_psw = {key:p(value) for (key,value) in psw.items()}
+# print(original_psw)
+
+#Q: Create 4 functions: iron_clothes, make_breakfast, get_ready and misc
+# and excute them in this order using threads
+# first task will take 3 sec
+# second task will take 5 sec
+# third task will take 2 sec
+# last task will take 1 sec
+# Print total execution time
+
+# import time 
+# import threading
+# start = time.time()
+
+# def iron_clothes():
+#     time.sleep(3)
+#     print('Tom irons his clothes.')
+# def make_breakfast():
+#     time.sleep(4)
+#     print('Tom makes breakfast.')
+# def get_ready():
+#     time.sleep(2)
+#     print('Tom is ready.')
+# def misc():
+#     time.sleep(5)
+#     print('misc')
+
+# a = threading.Thread(target = iron_clothes,args=())
+# b = threading.Thread(target = make_breakfast,args=())
+# c = threading.Thread(target = get_ready,args=())
+# d = threading.Thread(target = misc,args=())
+
+# a.start()
+# b.start()
+# c.start()
+# d.start()
+
+# print("Number of thread running: ",threading.active_count())
+# print("Threads total: ",threading.enumerate())
+
+# a.join()
+# b.join()
+# c.join()
+# d.join()
+
+# end = time.time()
+# print("This program took: ",end - start,"seconds to execute")
 
 
-passwords={"Tim":"123o4n12oi","John":"12345qaz","Brad":"@#$$%AWES","Jessica":"1995"}
 
-def rev(x):
-    x = list(x[::-1])
-    for i in range(len(x)-1):
-        x.insert(2*i+1,'A')
-    return "".join(x)
+# Q: Create a thread which will run in background and monitor time of program
+# execution and show the current time afer every 3 sec
 
-psw = {key:rev(value) for (key,value) in passwords.items()}
-print(psw)
+# import time
+# import threading
+# def t():
+#     while True:
+#         print(time.ctime(time.time()))
+#         time.sleep(3)
 
-def p(x):
-    x = list(x[::-1])
-    for i in range((len(x)-1)//2):
-        x.pop(-i-2)
-    return "".join(x)
+# # a = threading.Thread(target = t)
+# a = threading.Thread(target = t, daemon = True)
+# a.start()
+# time.sleep(7)
+# print('hello')
 
-original_psw = {key:p(value) for (key,value) in psw.items()}
-print(original_psw)
